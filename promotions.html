@@ -3,13 +3,28 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>promotions</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
+    <title>Document</title>
+     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+    
     <style>
         .image{
             margin-left: 280px;
             border-bottom: 3px solid #bd3208;
+           
+        }
+
+        .image img{
+          width: 80%;
+        }
+
+        @media(max-width:768px){
+          .image{
+            margin-left: 10%;
+          }
+          .image img{
+            width:90%;
+          }
         }
     </style>
     <style>
@@ -128,18 +143,40 @@
       margin: 0 5px;
     }
   </style>
+<style>
+  section{
+    background-image: url('https://www.pringleapi.com/Documents/fe604bcd-2ab7-448a-9051-e84630f3f25e/sec-1.png') ; 
+      background-repeat:no-repeat; 
+      background-size: cover;
+       background-position: center; 
+       /* background-attachment:fixed; */
 
+  }
+</style>
  <!-- navbar -->
-    <style>
+   <style>
        
         .navbar .container-fluid{
             background-image: url(https://www.pringleapi.com/Documents/fe604bcd-2ab7-448a-9051-e84630f3f25e/header-bg.jpg);
-            background-size: 45%;
-             
+            background-size: 45%;   
+        }
+        @media (max-width: 768px) {
+          .navbar .container-fluid{
+            background-size: 120%;  
+            background-repeat: no-repeat; 
+            
+          }
+        
         }
         .logo{
             padding-left: 50px;
             width: 250px;
+        }
+        @media (max-width: 768px) {
+          .logo{
+            width: 150px;
+            padding-left: 20px;
+          }
         }
         .navbar{
             padding: 0;
@@ -155,6 +192,13 @@
             padding: 15px!important;
             margin-top: 25px;
         }
+
+        @media (max-width: 768px) {
+          .navbar-nav a{
+            padding:10px!important ;
+          }
+        }
+          
         .navbar-nav a:hover{
             color: black;
         }
@@ -173,7 +217,7 @@
 </head>
 <body>
     <!-- navbar -->
-   <header style="position: fixed; top: 0%; width: 100%; z-index: 100;">
+  <header style="position: fixed; top: 0%; width: 100%; z-index: 100;">
         <div class="contact row">
            <div class="col"><a href=""> Call Us : 999-999-9999</a></div> 
            <div class="col text-end"><a href=""> <i class="bi bi-geo-alt-fill"></i> 
@@ -202,11 +246,12 @@
 </nav>
 
     </header>
-  <header style="margin-top: 160px;">
-    <h2 style="margin-left:450px;">Get 5 % off on all online orders</h2><br>
+  <section style="margin-top: 150px;">
+    
+    <h2 class="source" style="text-align: center;">Get 5 % off on all online orders</h2><br>
     <div class="image">
     <img src="https://www.pringleapi.com/Documents/fe604bcd-2ab7-448a-9051-e84630f3f25e/Desi%20Cravings-Melissa-TX-promo2.jpg">
-</div></header><br><br>
+</div></section><br><br>
 
 <!-- Footer -->
   <footer class="footer">
@@ -246,6 +291,7 @@
       Powered by Biryani Technologies Inc.
     </div>
   </footer>
-
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js" integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q" crossorigin="anonymous"></script>
+</body>
 </body>
 </html>

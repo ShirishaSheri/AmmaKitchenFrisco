@@ -52,9 +52,15 @@
     <!-- reviews styles -->
      <style>
         .review{
-            height: 350px;
+            height: 400px;
             
         }
+        @media (max-width: 768px) {
+          .review{
+            height: 100%;
+          }
+        }
+  
         
         .review img{
         filter: brightness(10%);
@@ -65,12 +71,18 @@
             color: rgb(181, 230, 184);
             margin: 20px;
         }
+        @media (max-width: 576px) {
+          .carousel-caption p, h5, h6{
+            margin: 0%;
+           
+        }}
+          
         
         .carousel-indicators button{
             background-color: white!important;
             ;}
 
-            @media (max-width: 576px) {
+            @media (max-width: 768px) {
   .carousel-caption h3 {
     font-size: 18px;
   }
@@ -90,12 +102,25 @@
        
         .navbar .container-fluid{
             background-image: url(https://www.pringleapi.com/Documents/fe604bcd-2ab7-448a-9051-e84630f3f25e/header-bg.jpg);
-            background-size: 45%;
-             
+            background-size: 45%;   
+        }
+        @media (max-width: 768px) {
+          .navbar .container-fluid{
+            background-size: 120%;  
+            background-repeat: no-repeat; 
+            
+          }
+        
         }
         .logo{
             padding-left: 50px;
             width: 250px;
+        }
+        @media (max-width: 768px) {
+          .logo{
+            width: 150px;
+            padding-left: 20px;
+          }
         }
         .navbar{
             padding: 0;
@@ -111,6 +136,13 @@
             padding: 15px!important;
             margin-top: 25px;
         }
+
+        @media (max-width: 768px) {
+          .navbar-nav a{
+            padding:10px!important ;
+          }
+        }
+          
         .navbar-nav a:hover{
             color: black;
         }

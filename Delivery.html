@@ -3,9 +3,9 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Delivery Page</title>
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
+   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+  <title>Delivery Page</title>
   <style>
 
     /* Form Section */
@@ -18,6 +18,11 @@
        background-position: center; 
        /* background-attachment: fixed;  */
       
+    }
+    @media(max-width:768px){
+      .form-section{
+        margin:0%;
+      }
     }
 
     .form-section h2 {
@@ -32,7 +37,11 @@
       border: 1px solid #ccc;
       border-radius: 5px;
     }
-
+@media(max-width:768px){
+  .form-section select{
+    width:300px;
+  }
+}
     .form-section button {
       display: block;
       margin: 20px auto;
@@ -169,16 +178,29 @@
   </style>
 
   <!-- navbar -->
-    <style>
+  <style>
        
         .navbar .container-fluid{
             background-image: url(https://www.pringleapi.com/Documents/fe604bcd-2ab7-448a-9051-e84630f3f25e/header-bg.jpg);
-            background-size: 45%;
-             
+            background-size: 45%;   
+        }
+        @media (max-width: 768px) {
+          .navbar .container-fluid{
+            background-size: 120%;  
+            background-repeat: no-repeat; 
+            
+          }
+        
         }
         .logo{
             padding-left: 50px;
             width: 250px;
+        }
+        @media (max-width: 768px) {
+          .logo{
+            width: 150px;
+            padding-left: 20px;
+          }
         }
         .navbar{
             padding: 0;
@@ -194,6 +216,13 @@
             padding: 15px!important;
             margin-top: 25px;
         }
+
+        @media (max-width: 768px) {
+          .navbar-nav a{
+            padding:10px!important ;
+          }
+        }
+          
         .navbar-nav a:hover{
             color: black;
         }
@@ -228,9 +257,9 @@
     </button>
     <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
       <div class="navbar-nav ms-5">
-        <a class="nav-link " aria-current="page" href="index.html">HOME</a>
+        <a class="nav-link active" aria-current="page" href="index.html">HOME</a>
         <a class="nav-link " aria-current="page" href="orderonline.html">ORDER ONLINE</a>
-        <a class="nav-link active" href="Delivery.html">DELIVERY TO COMMUNITIES</a>
+        <a class="nav-link" href="Delivery.html">DELIVERY TO COMMUNITIES</a>
         <a class="nav-link" href="catering.html">CATERING</a>
          <a class="nav-link" href="promotions.html">PROMOTIONS</a>
         <a class="nav-link" href="Sign Up.html">SIGN UP</a>
@@ -243,7 +272,7 @@
 
     </header>
   <!-- Form Section -->
-  <div class="form-section" style="margin-top: 160px;">
+  <div class="form-section" style="margin-top: 180px;">
     <h2>Select your Community to place an order</h2>
     <select>
       <option>Select a Locality</option>
@@ -314,7 +343,7 @@ Delivery Availability:  SUNDAY, MONDAY, TUESDAY, WEDNESDAY, THURSDAY, FRIDAY, SA
     </div>
   </footer>
 
-
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js" integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q" crossorigin="anonymous"></script>
 
 </body>
 </html>
