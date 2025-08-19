@@ -7,6 +7,8 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Catering Services</title>
 <link rel="stylesheet" href="style.css">
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
 <style>
     
 /* Reset */
@@ -354,84 +356,78 @@ background: #d35400;
   </style>
   <!-- navbar -->
    <style>
-     .navbar {
-      
-      background: #f9b71c; /* yellow bg */
-      background-image: url(https://www.pringleapi.com/Documents/fe604bcd-2ab7-448a-9051-e84630f3f25e/header-bg.jpg);
-            background-size: 35%;
-            /* background-size: 45%; */
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      padding: 20px 15px;
-    }
+       
+        .navbar .container-fluid{
+            background-image: url(https://www.pringleapi.com/Documents/fe604bcd-2ab7-448a-9051-e84630f3f25e/header-bg.jpg);
+            background-size: 45%;
+             
+        }
+        .logo{
+            padding-left: 50px;
+            width: 250px;
+        }
+        .navbar{
+            padding: 0;
+        }
 
-    /* Logo */
-    .navbar .logo img {
-      height: 50px;
-    }
-
-    /* Menu links */
-    .navbar .menu {
-      display: flex;
-      gap: 20px;
-    }
-
-    .navbar .menu a {
-      text-decoration: none;
-      color: #070707;
-      font-weight: bold;
-      font-size: 18px;
-      transition: 0.3s;
-    }
-
-    .navbar .menu a:hover {
-      color: #120433;
-    }
-
-    /* Call us */
-    .navbar .contact {
-      font-weight: bold;
-      color: #bb1b06;
-    }
-
-    /* Mobile responsive */
-    @media (max-width: 768px) {
-      .navbar {
-        flex-direction: column;
-        align-items: flex-start;
-      }
-      .menu {
-        flex-direction: column;
-        width: 100%;
-      }
-    }
-  </style>
+        .navbar-nav{
+            display: flex;
+        }
+        .navbar-nav a{
+            color: #0d411d;
+            font-size: larger;
+            font-weight: bold;
+            padding: 15px!important;
+            margin-top: 25px;
+        }
+        .navbar-nav a:hover{
+            color: black;
+        }
+        .contact{
+            background-color:#0d411d;
+            padding: 15px;
+            display: flex;
+            
+        }
+        .contact a{
+            text-decoration: none;
+            font-weight: 300;
+            color:#ffc10a;
+        }
+     </style>
 </head>
 <body>
   <!-- navbar -->
-   <header class="navbar">
-    <!-- Logo -->
-    <div class="logo">
-      <img src="https://www.pringleapi.com/Documents/fe604bcd-2ab7-448a-9051-e84630f3f25e/Desi-Cravings-Logo.png" alt="Logo">
-    </div>
+   <header style="position: fixed; top: 0%; width: 100%; z-index: 100;">
+        <div class="contact row">
+           <div class="col"><a href=""> Call Us : 999-999-9999</a></div> 
+           <div class="col text-end"><a href=""> <i class="bi bi-geo-alt-fill"></i> 
+				 2602 Sherman St, Melissa, TX - 75454</a></div> 
+        </div>
 
-    <!-- Menu -->
-    <nav class="menu">
-      <a href="index.html">HOME</a>
-      <a href="orderonline.html">ORDER ONLINE</a>
-      <a href="Delivery.html">DELIVER TO COMMUNITIES</a>
-      <a href="catering.html">CATERING</a>
-      <a href="promotions.html">PROMOTIONS</a>
-      <a href="Sign Up.html">SIGN UP</a>
-      <a href="Contact us.html">CONTACT US</a>
-    </nav>
-    <!-- Contact -->
-    <div class="contact">
-      CALL US: 972-656-0499
+        <nav class="navbar navbar-expand-lg bg-body-tertiary">
+  <div class="container-fluid">
+    <img src="image.jpeg" alt="" class="me-5 logo">
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+      <div class="navbar-nav ms-5">
+        <a class="nav-link " aria-current="page" href="index.html">HOME</a>
+        <a class="nav-link " aria-current="page" href="orderonline.html">ORDER ONLINE</a>
+        <a class="nav-link" href="Delivery.html">DELIVERY TO COMMUNITIES</a>
+        <a class="nav-link active" href="catering.html">CATERING</a>
+         <a class="nav-link" href="promotions.html">PROMOTIONS</a>
+        <a class="nav-link" href="Sign Up.html">SIGN UP</a>
+         <a class="nav-link" href="Contact us.html">CONTACT US</a>
+       
+      </div>
     </div>
-  </header>
-<section class="catering-section">
+  </div>
+</nav>
+
+    </header>
+<section class="catering-section" style="margin-top: 160px;">
 <div class="catering-container">
 <!-- Left Image -->
 <div class="catering-image">
