@@ -874,6 +874,7 @@ html {
     flex-wrap: wrap
 }
 
+ 
 .menu-item-card {
     display: flex;
     max-width: 408px;
@@ -2031,9 +2032,37 @@ h3 {
     }
 }
 
-@media only screen and (max-width: 400px) {
+@media only screen and (min-width: 1200px) {
+.productcatalogcontainer
+{
+  margin-top: 250px;
+}
+}
+@media only screen and (max-width: 1200px) {
+.productcatalogcontainer
+{
+  margin-top: 270px;
+}
+}
+
+
+@media only screen and (max-width: 450px) {
     .menu-item-card {
+
         min-width:250px
+    }
+    .productcatalogcontainer
+    {
+      margin-top:400px;
+    }
+    .checkout-mode-label {
+        font-size: 12px
+    }
+}
+
+@media only screen and (max-width: 1200px) {
+    .menu-item-card {
+        min-width:200px
     }
 
     .checkout-mode-label {
@@ -2041,7 +2070,7 @@ h3 {
     }
 }
 
-@media only screen and (min-width: 1000px) {
+@media only screen and (min-width: 1200px) {
     .desktop-checkout {
         flex-direction:row;
         gap: 50px;

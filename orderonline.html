@@ -53,9 +53,14 @@
     </style>
     <!-- reviews styles -->
      <style>
-        .review{
-            height: 350px;
+       .review{
+            height: 400px;
             
+        }
+        @media (max-width: 768px) {
+          .review{
+            height: 100%;
+          }
         }
         
         .review img{
@@ -67,12 +72,18 @@
             color: rgb(181, 230, 184);
             margin: 20px;
         }
+
+         @media (max-width: 576px) {
+          .carousel-caption p, h5, h6{
+            margin: 0%;
+           
+        }}
         
         .carousel-indicators button{
             background-color: white!important;
             ;}
 
-            @media (max-width: 576px) {
+            @media (max-width: 768px) {
   .carousel-caption h3 {
     font-size: 18px;
   }
@@ -93,11 +104,23 @@
         .navbar .container-fluid{
             background-image: url(https://www.pringleapi.com/Documents/fe604bcd-2ab7-448a-9051-e84630f3f25e/header-bg.jpg);
             background-size: 45%;
-             
+             }
+        @media (max-width: 768px) {
+          .navbar .container-fluid{
+            background-size: 120%;  
+            background-repeat: no-repeat; 
+            
+          }
         }
         .logo{
             padding-left: 50px;
             width: 250px;
+        }
+         @media (max-width: 768px) {
+          .logo{
+            width: 150px;
+            padding-left: 20px;
+          }
         }
         .navbar{
             padding: 0;
@@ -113,6 +136,14 @@
             padding: 15px!important;
             margin-top: 25px;
         }
+
+         @media (max-width: 768px) {
+          .navbar-nav a{
+            padding:10px!important ;
+          }
+        }
+          
+
         .navbar-nav a:hover{
             color: black;
         }
@@ -305,21 +336,17 @@
     </div>
   </div>
 </nav>
-
-    </header>
-     <!-- Order Online starts -->
-    <div style="display:fixed; height:140px; opacity:0.1"></div>
-    <div class="menu-header menu-header-checkout" id="menuHeader">
-            <img src="https://www.pringleapi.com/Documents/fe604bcd-2ab7-448a-9051-e84630f3f25e/menu-background.jpg" class="pringle-headerimage" style="visibility: hidden; height: 50px;">
+<div class="menu-header menu-header-checkout" style="display:block" id="menuHeader">
+            <img src="https://www.pringleapi.com/Documents/fe604bcd-2ab7-448a-9051-e84630f3f25e/menu-background.jpg" class="pringle-headerimage" style="visibility: hidden; height: 40px;">
             <div class="restaurant-logo">
-                <img src="./assets/ammakitchenlogo.png" class="pringle-logoimage" style="width: 100px; height: 100px;">
+                 <div style="width: 50px; height: 30px;"></div> 
                 
                 <div class="nav-buttons">
                     <a href="#"  class="account-nav theme-border btnlink no-margin-right"><img src="./assets/user.png" style="width:25px; height:25px"></a>
                     <button type="button" id="viewCartBtn" class="account-nav-2 theme-border  btnlink"><img src="./assets/cart.jpg" style="width:40px; height:40px"></button>
                 </div>
             </div>
-             <div class="menu-categories" style="margin-left:10%; margin-top:0.5%;">
+             <div class="menu-categories" style="margin-left:8%; margin-top:0.5%;">
                         <div class="menu-category theme-color" id="menu-category" >
                             <a class="category-name active" href="#tab-55425" id="catid55425" tabindex="0">Breakfast</a><a class="category-name" href="#tab-55429" id="catid55429" tabindex="0">Rice Items</a><a class="category-name" href="#tab-55430" id="catid55430" tabindex="0">Indo Chinese</a><a class="category-name" href="#tab-55428" id="catid55428" tabindex="0">Appetizers </a><a class="category-name" href="#tab-55427" id="catid55427" tabindex="0">Curries</a><a class="category-name" href="#tab-55424" id="catid55424" tabindex="0">Snacks</a><a class="category-name" href="#tab-55423" id="catid55423" tabindex="0">Drinks</a><a class="category-name" href="#tab-55431" id="catid55431" tabindex="0">Chat &amp; More</a><a class="category-name" href="#tab-55426" id="catid55426" tabindex="0">$5 Menu</a><a class="category-name" href="#tab-56035" id="catid56035" tabindex="0">Pot Yogurt</a><a class="category-name" href="#tab-56169" id="catid56169" tabindex="0">Sweet</a><a class="category-name" href="#tab-56591" id="catid56591" tabindex="0">Breads</a><a class="category-name" href="#tab-56600" id="catid56600" tabindex="0">Deserts</a>
                             <script type="text/javascript">
@@ -330,10 +357,36 @@
                         </div>
                     </div>
         </div>
-   <div id="productCatalogTemplateTop" style="margin-top:10% " class="productcatalogcontainer">
+    </header>
+     <!-- Order Online starts -->
+    <!-- <div style="display:fixed; height:140px; opacity:0.1"></div> -->
+     <div style="display:block">
+     <!-- <div class="menu-header menu-header-checkout" style="display:block" id="menuHeader">
+            <img src="https://www.pringleapi.com/Documents/fe604bcd-2ab7-448a-9051-e84630f3f25e/menu-background.jpg" class="pringle-headerimage" style="visibility: hidden; height: 40px;">
+            <div class="restaurant-logo">
+                 <div style="width: 50px; height: 50px;"></div> 
+                
+                <div class="nav-buttons">
+                    <a href="#"  class="account-nav theme-border btnlink no-margin-right"><img src="./assets/user.png" style="width:25px; height:25px"></a>
+                    <button type="button" id="viewCartBtn" class="account-nav-2 theme-border  btnlink"><img src="./assets/cart.jpg" style="width:40px; height:40px"></button>
+                </div>
+            </div>
+             <div class="menu-categories" style="margin-left:8%; margin-top:0.5%;">
+                        <div class="menu-category theme-color" id="menu-category" >
+                            <a class="category-name active" href="#tab-55425" id="catid55425" tabindex="0">Breakfast</a><a class="category-name" href="#tab-55429" id="catid55429" tabindex="0">Rice Items</a><a class="category-name" href="#tab-55430" id="catid55430" tabindex="0">Indo Chinese</a><a class="category-name" href="#tab-55428" id="catid55428" tabindex="0">Appetizers </a><a class="category-name" href="#tab-55427" id="catid55427" tabindex="0">Curries</a><a class="category-name" href="#tab-55424" id="catid55424" tabindex="0">Snacks</a><a class="category-name" href="#tab-55423" id="catid55423" tabindex="0">Drinks</a><a class="category-name" href="#tab-55431" id="catid55431" tabindex="0">Chat &amp; More</a><a class="category-name" href="#tab-55426" id="catid55426" tabindex="0">$5 Menu</a><a class="category-name" href="#tab-56035" id="catid56035" tabindex="0">Pot Yogurt</a><a class="category-name" href="#tab-56169" id="catid56169" tabindex="0">Sweet</a><a class="category-name" href="#tab-56591" id="catid56591" tabindex="0">Breads</a><a class="category-name" href="#tab-56600" id="catid56600" tabindex="0">Deserts</a>
+                            <script type="text/javascript">
+                                $(document).ready(function () {
+
+                                });
+                            </script>
+                        </div>
+                    </div>
+     </div> -->
+     <div id="productCatalogTemplateTop"  class="productcatalogcontainer">
               
         <input type="hidden" name="ctl00$MainContent$hdnNumberOfItemsInCart" id="MainContent_hdnNumberOfItemsInCart"> 
         
+         
         
         <div class="container-fluid">
             
@@ -341,9 +394,9 @@
                 
             
             </div>
-            <div id="MainContent_plMenuPanel" style="margin-top:10%" class="plMenuPanel">
+            <div id="MainContent_plMenuPanel"  class="plMenuPanel">
 	
-                <div class="menu-info">
+                <div class="menu-info" style="margin-top:2%">
 
                         <div class="menu-categories-items"><div class="category-header">Breakfast</div><div class="category-tagline">Breakfast</div><div class="menu-items" id="tab-55425">
                             <div class="menu-item-card "><img class="menu-item-image" src="https://www.pringleapi.com/DigitalMenu/Products/423916.jpg"><div class="menu-item-info"><div class="menu-item-desc"><div class="item-name-and-stickers"> 
@@ -2271,7 +2324,7 @@
         });
     </script>
 
-        </div>
+     </div>
     </div>
   <!-- Order Online end -->
 
