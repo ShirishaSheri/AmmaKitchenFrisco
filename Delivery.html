@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Delivery Page</title>
+  <style>
+
+    /* Form Section */
+    .form-section {
+      text-align: center;
+      margin: 80px auto;
+      background-image: url('https://www.pringleapi.com/Documents/fe604bcd-2ab7-448a-9051-e84630f3f25e/sec-1.png') ; 
+      background-repeat:no-repeat; 
+      background-size: cover;
+       background-position: center; 
+       /* background-attachment: fixed;  */
+      
+    }
+
+    .form-section h2 {
+      font-size: 24px;
+      margin-bottom: 20px;
+    }
+
+    .form-section select {
+      width: 1000px;
+      padding: 10px;
+      margin: 10px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+    }
+
+    .form-section button {
+      display: block;
+      margin: 20px auto;
+      padding: 12px 20px;
+      background: green;
+      color: #fff;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      font-weight: bold;
+    }
+
+    .form-section button:hover {
+      background: darkgreen;
+    }
+
+    
+  </style>
+  
+  <style>
+    /* Footer main */
+    .footer {
+      background: url('https://www.pringleapi.com/Documents/fe604bcd-2ab7-448a-9051-e84630f3f25e/footer-bg.webp') no-repeat center;
+      background-size: cover;
+      padding: 40px 50px 0 50px;
+      border-top: 3px solid #eaf0ed;
+      position: relative;
+      color: #333;
+    }
+
+    .footer::before {
+      content: "";
+      position: absolute;
+      top: 0; left: 0;
+      width: 100%; height: 100%;
+      background: rgba(255,255,255,0.8); /* semi-white overlay for readability */
+      z-index: 0;
+    }
+
+    .footer-container {
+      position: relative;
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      z-index: 1;
+    }
+
+    /* Left side */
+    .footer-left {
+      flex: 1;
+      min-width: 250px;
+      margin-bottom: 20px;
+    }
+
+    .footer-left img {
+      height: 60px;
+      margin-bottom: 15px;
+    }
+
+    .footer-left p {
+      font-size: 14px;
+      margin: 5px 0;
+    }
+
+    .footer-left p strong {
+      font-weight: bold;
+    }
+
+    /* Right side */
+    .footer-right {
+      flex: 1;
+      min-width: 250px;
+      margin-bottom: 20px;
+    }
+
+    .footer-right h4 {
+      font-size: 16px;
+      margin-bottom: 10px;
+      color: #222;
+    }
+
+    .social-icons {
+      margin-bottom: 15px;
+    }
+
+    .social-icons a {
+      display: inline-block;
+      margin-right: 10px;
+    }
+
+    .social-icons img {
+      width: 30px;
+      height: 30px;
+    }
+
+    .mailing-list input {
+      padding: 10px;
+      width: 65%;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+    }
+
+    .mailing-list button {
+      padding: 10px 15px;
+      background: orange;
+      color: #fff;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+      font-weight: bold;
+    }
+
+    .mailing-list button:hover {
+      background: darkorange;
+    }
+
+    /* Bottom green strip */
+    .footer-bottom {
+      background: #005128;
+      color: #fff;
+      text-align: center;
+      padding: 30px;
+      font-size: 17px;
+      margin-top: 30px;
+      position: relative;
+      z-index: 1;
+    }
+
+    .footer-bottom a {
+      color: yellow;
+      text-decoration: none;
+      margin: 0 5px;
+    }
+  </style>
+
+  <!-- navbar -->
+   <style>
+     .navbar {
+      
+      background: #f9b71c; /* yellow bg */
+      background-image: url(https://www.pringleapi.com/Documents/fe604bcd-2ab7-448a-9051-e84630f3f25e/header-bg.jpg);
+            background-size: 35%;
+            /* background-size: 45%; */
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 20px 15px;
+    }
+
+    /* Logo */
+    .navbar .logo img {
+      height: 50px;
+    }
+
+    /* Menu links */
+    .navbar .menu {
+      display: flex;
+      gap: 20px;
+    }
+
+    .navbar .menu a {
+      text-decoration: none;
+      color: #070707;
+      font-weight: bold;
+      font-size: 18px;
+      transition: 0.3s;
+    }
+
+    .navbar .menu a:hover {
+      color: #120433;
+    }
+
+    /* Call us */
+    .navbar .contact {
+      font-weight: bold;
+      color: #bb1b06;
+    }
+
+    /* Mobile responsive */
+    @media (max-width: 768px) {
+      .navbar {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+      .menu {
+        flex-direction: column;
+        width: 100%;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- navbar -->
+   <header class="navbar">
+    <!-- Logo -->
+    <div class="logo">
+      <img src="https://www.pringleapi.com/Documents/fe604bcd-2ab7-448a-9051-e84630f3f25e/Desi-Cravings-Logo.png" alt="Logo">
+    </div>
+
+    <!-- Menu -->
+    <nav class="menu">
+      <a href="#">ORDER ONLINE</a>
+      <a href="#">DELIVERY</a>
+      <a href="#">COMMUNITIES</a>
+      <a href="#">CATERING</a>
+      <a href="#">PROMOTIONS</a>
+      <a href="#">SIGN UP</a>
+      <a href="#">CONTACT US</a>
+    </nav>
+
+    <!-- Contact -->
+    <div class="contact">
+      CALL US: 972-656-0499
+    </div>
+  </header>
+  <!-- Form Section -->
+  <div class="form-section">
+    <h2>Select your Community to place an order</h2>
+    <select>
+      <option>Select a Locality</option>
+      <option>United states</option>
+      <option>3400 Liberty Way Melissa TX United States</option>
+      <option>Auburndale Ave Melissa TX United States </option>
+      <option>Legacy Ranch Dr Texas 75454 USA </option>
+      <option>Meadow run 2302  Myrtle Way Melissa TX</option>
+      <option>Milrany Ranch 3504 Thomas Earl  Way Melissa TX 75454</option>
+      <option>North creek 2819 Mesquite ave melissa TX 75454 United states</option>
+      <option>Willow wood 813 Claremont Drive Mckinney TX 75071</option>
+
+                                                      </select><br>
+Delivery Availability:  SUNDAY, MONDAY, TUESDAY, WEDNESDAY, THURSDAY, FRIDAY, SATURDAY                                                <script>
+                                                $(document).ready(function () {
+                                                    $(document).on("change", "#sFoodAtWorkLocation", function () {
+                                                        var optionSelected = $("option:selected", this);
+                                                        var valueSelected = this.value;
+                                                        window.location.replace('/DeliveryToCommunity?SelectedDropOffPoint=' + valueSelected + "#selecteddropoffpoint");
+                                                    });
+                                                });
+                                                </script>
+    </select><br>
+    <select>
+      <option>Select a Delivery Time</option>
+    </select>
+    <br>
+    <button>Order from Menu</button>
+  </div>
+
+  <!-- Footer -->
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="footer-container">
+
+      <!-- Left -->
+      <div class="footer-left">
+        <img src="https://www.pringleapi.com/Documents/fe604bcd-2ab7-448a-9051-e84630f3f25e/Desi-cravings-new-location-logo.png" alt="Logo">
+        <p><strong>Address:</strong><br>604 Doug Russell Rd, Suite E<br>Arlington, TX - 76010</p>
+        
+      </div>
+       <div class="footer-left">
+        <p><strong>Email Us:</strong><br>info@desicravingsmealsusa.com</p>
+        <p><strong>Phone Us:</strong><br>(972) 957-4009</p>
+      </div>
+
+      <!-- Right -->
+      <div class="footer-right">
+        <h4>Follow Us:</h4>
+        <div class="social-icons">
+          <a href="#"><img src="https://cdn-icons-png.flaticon.com/512/733/733547.png" alt="Facebook"></a>
+          <a href="#"><img src="https://cdn-icons-png.flaticon.com/512/2111/2111463.png" alt="Instagram"></a>
+        </div>
+
+        <h4>Mailing List:</h4>
+        <div class="mailing-list">
+          <input type="email" placeholder="Your email address...">
+          <button>GO!</button>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- Bottom strip -->
+    <div class="footer-bottom">
+      © 2025 Desi Cravings | <a href="#">Privacy Policy</a> | <a href="#">Contact</a><br>
+      Powered by Biryani Technologies Inc.
+    </div>
+  </footer>
+
+
+
+</body>
+</html>

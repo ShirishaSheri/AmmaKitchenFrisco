@@ -1,0 +1,601 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Catering Services</title>
+<link rel="stylesheet" href="style.css">
+<style>
+    
+/* Reset */
+* {
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+font-family: Arial, sans-serif;
+}
+
+body {
+background: #fff8f2;
+color: #333;
+line-height: 1.6;
+
+}
+
+/* Catering Section */
+.catering-section {
+padding: 20px 8%;
+background-image: url('https://www.pringleapi.com/Documents/fe604bcd-2ab7-448a-9051-e84630f3f25e/sec-1.png') ; 
+      background-repeat:no-repeat; 
+      background-size: cover;
+       background-position: center; 
+       background-attachment:fixed;
+
+}
+
+.catering-container {
+display: flex;
+align-items: center;
+gap: 30px;
+flex-wrap: wrap;
+margin: 80px auto;
+      
+
+}
+
+.catering-image img {
+width: 100%;
+max-width: 450px;
+border-radius: 8px;
+box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+.catering-content {
+flex: 1;
+}
+
+.catering-content h2 {
+font-size: 28px;
+color: #c0392b;
+margin-bottom: 15px;
+}
+
+.catering-content p {
+margin-bottom: 15px;
+font-size: 12px;
+color: #444;
+}
+
+.btn {
+display: inline-block;
+padding: 12px 20px;
+background: #e67e22;
+color: #fff;
+text-decoration: none;
+border-radius: 4px;
+transition: 0.3s;
+}
+
+.btn:hover {
+background: #d35400;
+}
+.catering-request {
+    margin-left: 500px;
+    
+}
+
+</style>
+
+<!-- table -->
+ <style>
+    
+
+    .form-container {
+      background: #fff;
+      padding: 25px 30px;
+      border-radius: 8px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+      width: 800px;
+      margin-left: 330px;
+      color: #033f26;
+    }
+
+    .form-container h3 {
+      margin-bottom: 20px;
+      font-size: 18px;
+      border-bottom: 1px solid #ccc;
+      padding-bottom: 5px;
+    }
+
+    .form-group {
+      margin-bottom: 15px;
+    }
+
+    label {
+      display: block;
+      font-weight: bold;
+      margin-bottom: 5px;
+      font-size: 14px;
+    }
+
+    input[type="text"],
+    input[type="email"],
+    input[type="tel"],
+    input[type="date"],
+    input[type="time"],
+    textarea {
+      width: 100%;
+      padding: 8px;
+      border: 1px solid #aaa;
+      border-radius: 4px;
+      font-size: 14px;
+    }
+
+    textarea {
+      height: 80px;
+      resize: none;
+    }
+
+    .checkbox-group,
+    .radio-group {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+      font-size: 14px;
+    }
+
+    .checkbox-group label,
+    .radio-group label {
+      font-weight: normal;
+    }
+
+    .form-actions {
+      display: flex;
+      justify-content: space-between;
+      margin-top: 20px;
+    }
+
+    .btn {
+      background: #0b7c4d;
+      color: white;
+      padding: 8px 16px;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      font-size: 14px;
+    }
+
+    .btn:hover {
+      background: #095c39;
+    }
+  </style>
+  <!-- captcha -->
+   <style>
+       .captcha-box {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      width: 320px;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+      padding: 12px;
+      background: #fff;
+    }
+
+    .captcha-left {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+
+    .captcha-left input[type="checkbox"] {
+      width: 20px;
+      height: 20px;
+      cursor: pointer;
+    }
+
+    .captcha-left label {
+      font-size: 14px;
+      color: #333;
+      cursor: pointer;
+    }
+
+    .captcha-logo {
+      text-align: center;
+      font-size: 10px;
+      color: #777;
+    }
+
+    .captcha-logo img {
+      width: 40px;
+      display: block;
+      margin: 0 auto 3px;
+    }
+
+    .buttons {
+      margin-top: 20px;
+      display: flex;
+      justify-content: center;
+      gap: 15px;
+    }
+
+    .buttons button {
+      background: #006644;
+      color: #fff;
+      border: none;
+      padding: 10px 18px;
+      border-radius: 6px;
+      font-size: 14px;
+      cursor: pointer;
+      transition: 0.3s;
+    }
+
+    .buttons button:hover {
+      background: #004d33;
+    }
+  </style>
+
+<style>
+    /* Footer main */
+    .footer {
+      background: url('https://www.pringleapi.com/Documents/fe604bcd-2ab7-448a-9051-e84630f3f25e/footer-bg.webp') no-repeat center;
+      background-size: cover;
+      padding: 40px 50px 0 50px;
+      border-top: 3px solid #eaf0ed;
+      position: relative;
+      color: #333;
+    }
+
+    .footer::before {
+      content: "";
+      position: absolute;
+      top: 0; left: 0;
+      width: 100%; height: 100%;
+      background: rgba(255,255,255,0.8); /* semi-white overlay for readability */
+      z-index: 0;
+    }
+
+    .footer-container {
+      position: relative;
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      z-index: 1;
+    }
+
+    /* Left side */
+    .footer-left {
+      flex: 1;
+      min-width: 250px;
+      margin-bottom: 20px;
+    }
+
+    .footer-left img {
+      height: 60px;
+      margin-bottom: 15px;
+    }
+
+    .footer-left p {
+      font-size: 14px;
+      margin: 5px 0;
+    }
+
+    .footer-left p strong {
+      font-weight: bold;
+    }
+
+    /* Right side */
+    .footer-right {
+      flex: 1;
+      min-width: 250px;
+      margin-bottom: 20px;
+    }
+
+    .footer-right h4 {
+      font-size: 16px;
+      margin-bottom: 10px;
+      color: #222;
+    }
+
+    .social-icons {
+      margin-bottom: 15px;
+    }
+
+    .social-icons a {
+      display: inline-block;
+      margin-right: 10px;
+    }
+
+    .social-icons img {
+      width: 30px;
+      height: 30px;
+    }
+
+    .mailing-list input {
+      padding: 10px;
+      width: 65%;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+    }
+
+    .mailing-list button {
+      padding: 10px 15px;
+      background: orange;
+      color: #fff;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+      font-weight: bold;
+    }
+
+    .mailing-list button:hover {
+      background: darkorange;
+    }
+
+    /* Bottom green strip */
+    .footer-bottom {
+      background: #005128;
+      color: #fff;
+      text-align: center;
+      padding: 30px;
+      font-size: 17px;
+      margin-top: 30px;
+      position: relative;
+      z-index: 1;
+    }
+
+    .footer-bottom a {
+      color: yellow;
+      text-decoration: none;
+      margin: 0 5px;
+    }
+  </style>
+  <!-- navbar -->
+   <style>
+     .navbar {
+      
+      background: #f9b71c; /* yellow bg */
+      background-image: url(https://www.pringleapi.com/Documents/fe604bcd-2ab7-448a-9051-e84630f3f25e/header-bg.jpg);
+            background-size: 35%;
+            /* background-size: 45%; */
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 20px 15px;
+    }
+
+    /* Logo */
+    .navbar .logo img {
+      height: 50px;
+    }
+
+    /* Menu links */
+    .navbar .menu {
+      display: flex;
+      gap: 20px;
+    }
+
+    .navbar .menu a {
+      text-decoration: none;
+      color: #070707;
+      font-weight: bold;
+      font-size: 18px;
+      transition: 0.3s;
+    }
+
+    .navbar .menu a:hover {
+      color: #120433;
+    }
+
+    /* Call us */
+    .navbar .contact {
+      font-weight: bold;
+      color: #bb1b06;
+    }
+
+    /* Mobile responsive */
+    @media (max-width: 768px) {
+      .navbar {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+      .menu {
+        flex-direction: column;
+        width: 100%;
+      }
+    }
+  </style>
+</head>
+<body>
+  <!-- navbar -->
+   <header class="navbar">
+    <!-- Logo -->
+    <div class="logo">
+      <img src="https://www.pringleapi.com/Documents/fe604bcd-2ab7-448a-9051-e84630f3f25e/Desi-Cravings-Logo.png" alt="Logo">
+    </div>
+
+    <!-- Menu -->
+    <nav class="menu">
+      <a href="#">ORDER ONLINE</a>
+      <a href="#">DELIVERY</a>
+      <a href="#">COMMUNITIES</a>
+      <a href="#">CATERING</a>
+      <a href="#">PROMOTIONS</a>
+      <a href="#">SIGN UP</a>
+      <a href="#">CONTACT US</a>
+    </nav>
+    <!-- Contact -->
+    <div class="contact">
+      CALL US: 972-656-0499
+    </div>
+  </header>
+<section class="catering-section">
+<div class="catering-container">
+<!-- Left Image -->
+<div class="catering-image">
+<img src="https://images.unsplash.com/photo-1600891964599-f61ba0e24092" alt="Catering Service">
+</div>
+
+<!-- Right Text -->
+<div class="catering-content">
+<h2>Desi Cravings</h2>
+<p>
+Let Desi Cravings bring the heart of Indian cuisine to your next celebration!
+Whether it's an intimate family gathering, a festive wedding, or a corporate event,
+we specialize in creating memorable experiences with our flavorful dishes.
+From aromatic curries and biryanis to freshly baked naans and vibrant appetizers,
+our menu is crafted to satisfy every palate.
+</p>
+<p>
+Choose from our expertly prepared catering options, including large party trays,
+individually packed meals for convenience, or the excitement of live cooking stations
+that immerse your guests in the essence of Indian hospitality.
+Let us handle the food while you focus on enjoying your event.
+</p>
+<p>
+Contact us today to customize your menu and create an event full of authentic Indian flavors!
+</p>
+
+</div>
+</div></section>
+<!-- table -->
+<div class="catering-request">
+<h2><b>Catering Request Form</b>
+</h2>
+<p>Fill the form to inquire about our catering services
+
+</p>
+</div><br><br>
+<header>
+    <div class="form-container">
+    <h3>Personal Information</h3>
+    <form>
+      <div class="form-group">
+        <label>First Name</label>
+        <input type="text" placeholder="First Name">
+      </div>
+
+      <div class="form-group">
+        <label>Last Name</label>
+        <input type="text" placeholder="Last Name">
+      </div>
+
+      <div class="form-group">
+        <label>Email</label>
+        <input type="email" placeholder="Email">
+      </div>
+
+      <div class="form-group">
+        <label>Phone</label>
+        <input type="tel" placeholder="Enter Your Phone Number">
+      </div>
+
+      <div class="form-group">
+        <label>Date of Event</label>
+        <input type="date">
+      </div>
+
+      <div class="form-group">
+        <label>Type of Catering</label>
+        <div class="checkbox-group">
+          <label><input type="checkbox"> Box Lunch</label>
+          <label><input type="checkbox"> Party Trays</label>
+          <label><input type="checkbox"> Buffet</label>
+          <label><input type="checkbox"> Catering</label>
+          <label><input type="checkbox"> Weddings</label>
+          <label><input type="checkbox"> Large Celebrations</label>
+          <label><input type="checkbox"> Private Dining</label>
+          <label><input type="checkbox"> Live Counter</label>
+        </div>
+      </div>
+
+      <div class="form-group">
+        <label>Time of Event</label>
+        <div class="radio-group">
+          <label><input type="radio" name="time"> Lunch</label>
+          <label><input type="radio" name="time"> Breakfast</label>
+          <label><input type="radio" name="time"> Dinner</label>
+          <label><input type="radio" name="time"> Other</label>
+        </div>
+      </div>
+
+      <div class="form-group">
+        <label>Pickup/Delivery Time</label>
+        <input type="time">
+      </div>
+
+      <div class="form-group">
+        <label>Message to Management</label>
+        <textarea placeholder="Write your message here..."></textarea>
+      </div>
+      <div>
+    <!-- Captcha Box -->
+    <div class="captcha-box">
+      <div class="captcha-left">
+        <input type="checkbox" id="not-robot">
+        <label for="not-robot">I'm not a robot</label>
+      </div>
+      <div class="captcha-logo">
+        <img src="https://www.gstatic.com/recaptcha/api2/logo_48.png" alt="captcha logo">
+        <div>reCAPTCHA</div>
+        <div><a href="#">Privacy</a> - <a href="#">Terms</a></div>
+      </div>
+    </div>
+
+    <!-- Buttons -->
+    <div class="buttons">
+      <button type="submit">Submit</button>
+      <button type="reset">Reset Form</button>
+    </div>
+  </div></header><br>
+  
+  <p style="color: #a50505;margin-left: 30px;">Please call us at (972) 656-0499 or send us an email to info@desicravingsmelissa.com to talk to our catering
+    specialist
+     and give us the opportunity to make the event even more memorable.</p>
+<br>
+
+<!-- Footer -->
+  <footer class="footer">
+    <div class="footer-container">
+
+      <!-- Left -->
+      <div class="footer-left">
+        <img src="https://www.pringleapi.com/Documents/fe604bcd-2ab7-448a-9051-e84630f3f25e/Desi-cravings-new-location-logo.png" alt="Logo">
+        <p><strong>Address:</strong><br>604 Doug Russell Rd, Suite E<br>Arlington, TX - 76010</p>
+        
+      </div>
+       <div class="footer-left">
+        <p><strong>Email Us:</strong><br>info@desicravingsmealsusa.com</p>
+        <p><strong>Phone Us:</strong><br>(972) 957-4009</p>
+      </div>
+
+      <!-- Right -->
+      <div class="footer-right">
+        <h4>Follow Us:</h4>
+        <div class="social-icons">
+          <a href="#"><img src="https://cdn-icons-png.flaticon.com/512/733/733547.png" alt="Facebook"></a>
+          <a href="#"><img src="https://cdn-icons-png.flaticon.com/512/2111/2111463.png" alt="Instagram"></a>
+        </div>
+
+        <h4>Mailing List:</h4>
+        <div class="mailing-list">
+          <input type="email" placeholder="Your email address...">
+          <button>GO!</button>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- Bottom strip -->
+    <div class="footer-bottom">
+      © 2025 Desi Cravings | <a href="#">Privacy Policy</a> | <a href="#">Contact</a><br>
+      Powered by Biryani Technologies Inc.
+    </div>
+  </footer>
+
+
+</body>
+</html>
+
