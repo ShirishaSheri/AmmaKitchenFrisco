@@ -803,7 +803,8 @@ html {
     background: 0 0;
     text-align: center;
     text-wrap: nowrap;
-    text-transform: uppercase
+    text-transform: uppercase;
+    text-decoration: none;
 }
 
 .category-name:hover {
@@ -2045,6 +2046,13 @@ h3 {
 }
 }
 
+@media only screen and (max-width: 500px) {
+.productcatalogcontainer
+{
+  margin-top: 150px;
+}
+}
+
 
 @media only screen and (max-width: 450px) {
     .menu-item-card {
@@ -2053,7 +2061,7 @@ h3 {
     }
     .productcatalogcontainer
     {
-      margin-top:400px;
+      margin-top:250px;
     }
     .checkout-mode-label {
         font-size: 12px
