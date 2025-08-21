@@ -15,7 +15,7 @@
       }
       @media (max-width: 768px) {
           .banner img{
-            height: 50vh;
+            height: auto;
           }
         }
   
@@ -25,6 +25,23 @@
         .card-body h5{
             color: #063610;
         }
+          
+        @media (max-width: 586px) {
+          .card-body h5{
+            font-size: 15px;
+          }
+          .items{
+            width: 43vw!important;
+          }}
+
+           @media (max-width: 768px) {
+          .card-body h5{
+            font-size: 15px;
+          }
+          .items{
+            width: 35vw;
+          }}
+        
         .card{
             position: relative;
         }
@@ -39,6 +56,14 @@
             border-radius: 5px;
         }
 
+        @media (max-width: 768px) {
+          .card .available{
+            padding: 1px;
+            right: 2px;
+            top: 2px;
+            font-size: 10px;
+          }}
+
         .button{
             background-color: #0a421d;
             color: white;
@@ -52,10 +77,18 @@
         .offer{
             position: relative;
             overflow: hidden;
+
         }
           .offer img{
             height: 50vh;
           }
+          @media (max-width: 768px) {
+            .offer img{
+              height: auto;
+              margin-bottom: 10px;
+            }
+          }
+            
 
         .offer:hover img{
             transform: scale(1.05);
@@ -454,7 +487,7 @@
     <div class="col ">
       <div class="card h-100 shadow items">
         <span class="available">Unavailable</span>
-        <img src="https://www.awesomecuisine.com/wp-content/uploads/2020/03/poori-masala-kizhangu.jpg" class="card-img-top" alt="Card 6">
+        <img src="https://www.cookingwithsiddhi.com/wp-content/uploads/2020/07/poori-recipe.jpg" class="card-img-top" alt="Card 6">
         <div class="card-body  bg-warning text-center">
           <h5 class="card-title">Poori</h5>
          
