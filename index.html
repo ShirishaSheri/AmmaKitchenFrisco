@@ -21,7 +21,35 @@
   
     </style>
     <style>
+    .food-card img {
+      height: 150px;
+      object-fit: cover;
+      border-radius: 10px;
+    }
+    .badge-custom {
+      position: absolute;
+      top: 10px;
+      left: 10px;
+      background-color: #198754; /* Bootstrap green */
+      color: white;
+      font-size: 0.75rem;
+      padding: 4px 8px;
+      border-radius: 8px;
+    }
+    .add-btn {
+      font-size: xx-large;
+      position: absolute;
+      top: 96px;
+      right: 10px;
+      background: white;
+      border-radius: 50%;
+      padding: 0px 6px;
+      border: 1px solid #ddd;
+      font-weight: bold;
+      cursor: pointer;
+    }
         
+        /*     
         .card-body h5{
             color: #063610;
         }
@@ -62,7 +90,7 @@
             right: 2px;
             top: 2px;
             font-size: 10px;
-          }}
+          }}*/
 
         .button{
             background-color: #0a421d;
@@ -419,87 +447,91 @@
     <p style="color: #2b2323;">Spice, Tradition, Taste, Perfect Start</p>
   </div>
 
- <div class="row g-4 d-flex flex-wrap">
+ <div class="container my-4">
+  <div class="row g-3">
     <!-- Card 1 -->
-    <div class="col ">
-      <div class="card h-80 shadow items">
-      <span class="available">Unavailable</span>
-
-        <img src="https://as2.ftcdn.net/jpg/05/66/23/95/1000_F_566239548_eLwgby4QUWM1WiUCZng2VRY4TyBcv2PP.jpg" class="card-img-top" alt="Card 1">
-        <div class="card-body bg-warning text-center">
-          <h5 class="card-title">Ghee Karam Dosa</h5>
-         
-         
+        <div class="col-6 col-md-4 col-lg-2">
+      <div class="card food-card position-relative shadow-sm">
+        <span class="badge-custom">#1 Most Liked</span>
+        <img src="https://as2.ftcdn.net/jpg/05/66/23/95/1000_F_566239548_eLwgby4QUWM1WiUCZng2VRY4TyBcv2PP.jpg" class="card-img-top" alt="House Fried Rice">
+        <div class="card-body p-0">
+          <h6 class="card-title m-0">Ghee Karam Dosa</h6>
+          <p class="mb-1">$15.45-<i class="bi bi-hand-thumbs-up"></i>96% (124)</p>
+          
         </div>
+        <div class="add-btn">+</div>
       </div>
     </div>
 
     <!-- Card 2 -->
-    <div class="col ">
-      <div class="card h-100 shadow items">
-        <span class="available">Unavailable</span>
-        <img src="https://deccanspice.us/wp-content/uploads/2023/10/ghee-idli-scaled.jpg" class="card-img-top" alt="Card 2">
-        <div class="card-body bg-warning text-center">
-          <h5 class="card-title">Ghee Karam Idly</h5>
-         
-         
+     <div class="col-6 col-md-4 col-lg-2">
+      <div class="card food-card position-relative shadow-sm">
+        <span class="badge-custom">#2 Most Liked</span>
+        <img src="https://deccanspice.us/wp-content/uploads/2023/10/ghee-idli-scaled.jpg" class="card-img-top" alt="Original Pad Thai">
+        <div class="card-body p-0">
+          <h6 class="card-title m-0">Ghee Karam Idly</h6>
+          <p class="mb-1">$16.95-<i class="bi bi-hand-thumbs-up"></i>91% (129)</p>
+          
         </div>
+        <div class="add-btn">+</div>
       </div>
     </div>
 
     <!-- Card 3 -->
-    <div class="col ">
-      <div class="card h-100 shadow items">
-        <span class="available">Unavailable</span>
-        <img src="https://miro.medium.com/1*nfbDiVFxBQGys61H7X7B1A.jpeg" class="card-img-top" alt="Card 3">
-        <div class="card-body bg-warning text-center">
-          <h5 class="card-title">Idly</h5>
-         
+ <div class="col-6 col-md-4 col-lg-2">
+      <div class="card food-card position-relative shadow-sm">
+        <span class="badge-custom">#3 Most Liked</span>
+        <img src="https://miro.medium.com/1*nfbDiVFxBQGys61H7X7B1A.jpeg" class="card-img-top" alt="Egg Rolls">
+        <div class="card-body p-0">
+          <h6 class="card-title m-0">Idly</h6>
+          <p class="mb-1">$8.45-<i class="bi bi-hand-thumbs-up"></i>97% (207)</p>
          
         </div>
+        <div class="add-btn">+</div>
       </div>
     </div>
 
     <!-- Card 4 -->
-    <div class="col ">
-      <div class="card h-100 shadow items">
-        <span class="available">Unavailable</span>
-        <img src="https://apollosugar.com/wp-content/uploads/2018/12/Masala-Dosa-1024x683.jpg" class="card-img-top" alt="Card 4">
-        <div class="card-body bg-warning text-center">
-          <h5 class="card-title">Masala Dosa</h5>
-          
+    <div class="col-6 col-md-4 col-lg-2">
+      <div class="card food-card position-relative shadow-sm">
+        <img src="https://apollosugar.com/wp-content/uploads/2018/12/Masala-Dosa-1024x683.jpg" class="card-img-top" alt="Pad Kee Mow">
+        <div class="card-body p-0">
+          <h6 class="card-title m-0">Masala Dosa</h6>
+          <p class="mb-1">$15.95-<i class="bi bi-hand-thumbs-up"></i>97% (72)</p>
          
         </div>
+        <div class="add-btn">+</div>
       </div>
     </div>
 
     <!-- Card 5 -->
-    <div class="col ">
-      <div class="card h-100 shadow items">
-        <span class="available">Unavailable</span>
-        <img src="https://indiafoodnetwork.in/wp-content/uploads/2018/06/mysore_bonda-Comp.jpg" class="card-img-top" alt="Card 5">
-        <div class="card-body bg-warning text-center">
-          <h5 class="card-title">Mysore Bonda</h5>
-         
+    <div class="col-6 col-md-4 col-lg-2">
+      <div class="card food-card position-relative shadow-sm">
+        <img src="https://indiafoodnetwork.in/wp-content/uploads/2018/06/mysore_bonda-Comp.jpg" class="card-img-top" alt="Mongolian Beef">
+        <div class="card-body p-0">
+          <h6 class="card-title m-0">Mysore Bonda</h6>
+          <p class="mb-1">$19.45-<i class="bi bi-hand-thumbs-up"></i>100% (38)</p>
          
         </div>
+        <div class="add-btn">+</div>
       </div>
     </div>
 
     <!-- Card 6 -->
-    <div class="col ">
-      <div class="card h-100 shadow items">
-        <span class="available">Unavailable</span>
-        <img src="https://www.cookingwithsiddhi.com/wp-content/uploads/2020/07/poori-recipe.jpg" class="card-img-top" alt="Card 6">
-        <div class="card-body  bg-warning text-center">
-          <h5 class="card-title">Poori</h5>
-         
-         
+    <div class="col-6 col-md-4 col-lg-2">
+      <div class="card food-card position-relative shadow-sm">
+        <img src="https://www.cookingwithsiddhi.com/wp-content/uploads/2020/07/poori-recipe.jpg" class="card-img-top" alt="Extra Dish">
+        <div class="card-body p-0">
+          <h6 class="card-title m-0">Poori</h6>
+          <p class="mb-1">$12.95-<i class="bi bi-hand-thumbs-up"></i>95% (50)</p>
+          
         </div>
+        <div class="add-btn">+</div>
       </div>
     </div>
 
   </div>
+</div>
 
   <div class="text-center m-5">
     <button style="margin-bottom: 50px;" class="button" onclick="window.location.href='orderonline.html'" >View all Items</button>
