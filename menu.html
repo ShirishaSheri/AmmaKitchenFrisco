@@ -310,14 +310,28 @@ display:none;
       margin: 0 5px;
     }
   </style>
-<style>
+<!-- <style>
 
-  @media(min-width:768px){
-  .dropdown{ 
+  .dropdown{
+    display: none;
+  }
+</style> -->
+<style>
+@media(min-width:768px){
+  .dropdown{
      display:none;
   }
+  
+}
 </style>
-    
+<style>
+@media(max-width:768px){
+  .List{
+     display:none;
+  }
+  
+}
+</style>
 </head>
 <body>
   
@@ -362,7 +376,8 @@ display:none;
   <ul class="dropdown-menu dropdown-menu-white w-100 ">
           <li class="menu-item active text-center" data-category="breakfast">
                 Breakfast</li>
-      <li class="menu-item text-center" data-category="rice"> Rice Items</li>
+
+                <li class="menu-item text-center" data-category="rice"> Rice Items</li>
       <li class="menu-item text-center" data-category="Indochinese">  Indo-Chinese</li>
       <li class="menu-item text-center" data-category="Appetizers">Appetizers</li>
       <li class="menu-item text-center" data-category="Curries"> Curries</li>
@@ -377,9 +392,9 @@ display:none;
 
 
   </ul>
-  <span>Menu List</span>
+  <span >Menu List</span>
 </div>
-
+<h3 class="List text-center">Menu List</h3>
     <div class="container">
   <aside class="sidebar">
     <ul>
