@@ -330,6 +330,30 @@ display:none;
      display:none;
   }
   
+
+}
+
+.dropdown .menu-item{
+  padding: 5px 5px;
+    cursor: pointer; 
+  background: #ede7e7;
+
+}
+.dropdown .menu-item:hover{
+    background: #f9c784;
+  color: #222;
+  border-left: 4px solid #db6400;
+
+}
+.dropdown{
+  /* position: sticky; */
+  position:sticky;
+  top: 160px;
+ z-index: 1050;
+ background-color: #f8f7f6;
+  /* left: 50%;
+  transform: translateX(-50%);
+    */
 }
 </style>
 </head>
@@ -369,23 +393,23 @@ display:none;
   
     <!-- <h3 class="text-center">Menu list</h3>
      -->
-<div class="dropdown text-center">
+<div class="dropdown text-center ">
   <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
     <i class="bi bi-card-list"></i>
   </button>
-  <ul class="dropdown-menu dropdown-menu-white w-100 ">
+  <ul class="dropdown-menu dropdown-menu-white w-50 ">
           <li class="menu-item active text-center" data-category="breakfast">
                 Breakfast</li>
 
-                <li class="menu-item text-center" data-category="rice"> Rice Items</li>
+                <li class="menu-item text-center " data-category="rice"> Rice Items</li>
       <li class="menu-item text-center" data-category="Indochinese">  Indo-Chinese</li>
       <li class="menu-item text-center" data-category="Appetizers">Appetizers</li>
-      <li class="menu-item text-center" data-category="Curries"> Curries</li>
-      <li class="menu-item text-center" data-category="Snacks">Snacks</li>
+      <li class="menu-item text-center " data-category="Curries"> Curries</li>
+      <li class="menu-item text-center " data-category="Snacks">Snacks</li>
       <li class="menu-item text-center" data-category="Drinks">Drinks</li>
-      <li class="menu-item text-center" data-category="Chat & More">Chat & More</li>
+      <li class="menu-item text-center " data-category="Chat & More">Chat & More</li>
       <li class="menu-item text-center" data-category="$5 Menu"> $5 Menu</li>
-      <li class="menu-item text-center" data-category="Pot Yogurt">Pot Yogurt</li>
+      <li class="menu-item text-center " data-category="Pot Yogurt">Pot Yogurt</li>
       <li class="menu-item text-center" data-category="Sweet"> Sweet</li>
       <li class="menu-item text-center" data-category="Breads">Breads</li>
       <li class="menu-item text-center" data-category="Deserts"> Deserts</li>
@@ -394,7 +418,7 @@ display:none;
   </ul>
   <span >Menu List</span>
 </div>
-<h3 class="List text-center">Menu List</h3>
+<h3 class="List text-center">Menu</h3>
     <div class="container">
   <aside class="sidebar">
     <ul>
