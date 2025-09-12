@@ -240,6 +240,12 @@
             display: flex;
             
         }
+        @media (max-width: 768px) {
+  .contact  {
+    flex-direction: column;
+    text-align: center;
+  }
+}
         .contact a{
             text-decoration: none;
             font-weight: bold;
@@ -369,7 +375,8 @@
 
     <header style="position: fixed; top: 0%; width: 100%; z-index: 100;">
         <div class="contact row">
-           <div class="col"><a href=""> Call Us : 972-970-6777</a></div> 
+           <div class="col "><a href=""> Call Us : 972-970-6777</a></div> 
+           <div class="col text-center bg-white rounded "><i class="bi bi-clock"></i> <a href=""></a><b>Mon: <span style="color:red">Closed</span> Tue-Fri:<span style="color:red"> 04 PM - 09 PM </span>Thu: <span style="color:red">08 AM - 11 AM</span> Sat-Sun:<span style="color:red"> 12 PM - 09 PM</span></b></div>
            <div class="col text-end"><a href=""> <i class="bi bi-geo-alt-fill"></i> 
 				7967 Custer Rd Ste 200,Frisco, TX 75035</a></div> 
         </div>
@@ -432,15 +439,21 @@
   <div class="container pt-5 " >
   <div class="row">
     <!-- First Image -->
-    <div class="col-md-6 offer">
+    <div class="col-md-4 offer">
       <!-- <img src="https://cdn.grabon.in/gograbon/images/web-images/uploads/1618575517942/food-coupons.jpg" class="img-fluid rounded" alt="Image 1" > -->
-    <img src="./assets/banner2.jpg" class="img-fluid rounded" alt="Image 1" >
+    <img src="https://static.vecteezy.com/system/resources/previews/031/257/444/non_2x/the-best-foodgraphy-tips-for-beginners-ai-generated-free-photo.jpg" class="img-fluid rounded" alt="Image 1" >
     </div>
     <!-- Second Image -->
-    <div class="col-md-6 offer">
+    <div class="col-md-4 offer">
       <!-- <img src="https://blog.foodhub.com/wp-content/uploads/2024/08/offers-hull.jpg" class="img-fluid rounded" alt="Image 2" > -->
-       <img src="./assets/banner3.jpg" class="img-fluid rounded" alt="Image 1" >
+       <img src="https://static.vecteezy.com/system/resources/previews/030/082/500/large_2x/the-best-foodgraphy-tips-ai-generated-free-photo.jpg" class="img-fluid rounded" alt="Image 1" >
     </div>
+    <!-- Third Image -->
+    <div class="col-md-4 offer">
+      <!-- <img src="https://blog.foodhub.com/wp-content/uploads/2024/08/offers-hull.jpg" class="img-fluid rounded" alt="Image 2" > -->
+       <img src="https://static.vecteezy.com/system/resources/previews/030/108/887/non_2x/the-foodgraphy-of-the-year-ai-generated-free-photo.jpg" class="img-fluid rounded" alt="Image 1" >
+    </div>
+  </div>
   </div>
 
   <div class="row mt-4 text-center my-3" >
@@ -451,83 +464,83 @@
  <div class="container my-4">
   <div class="row g-3">
     <!-- Card 1 -->
-        <div class="col-6 col-md-4 col-lg-2">
-      <div class="card food-card position-relative shadow-sm">
+        <div class="col-6 col-md-4 col-lg-2 ">
+      <div class="card food-card position-relative shadow-sm p-2">
         <span class="badge-custom">#1 Most Liked</span>
         <img src="https://as2.ftcdn.net/jpg/05/66/23/95/1000_F_566239548_eLwgby4QUWM1WiUCZng2VRY4TyBcv2PP.jpg" class="card-img-top" alt="House Fried Rice">
         <div class="card-body p-0">
-          <h6 class="card-title m-0">Ghee Karam Dosa</h6>
-          <p class="mb-1">$15.45-<i class="bi bi-hand-thumbs-up"></i>96% (124)</p>
+          <h6 class="card-title m-1 text-center">Ghee Karam Dosa</h6>
+          <!-- <p class="mb-1 text-center">$15.45-<i class="bi bi-hand-thumbs-up"></i>96% (124)</p> -->
           
         </div>
-        <div class="add-btn">+</div>
+        <!-- <div class="add-btn">+</div> -->
       </div>
     </div>
 
     <!-- Card 2 -->
-     <div class="col-6 col-md-4 col-lg-2">
-      <div class="card food-card position-relative shadow-sm">
+     <div class="col-6 col-md-4 col-lg-2 ">
+      <div class="card food-card position-relative shadow-sm p-2">
         <span class="badge-custom">#2 Most Liked</span>
         <img src="https://deccanspice.us/wp-content/uploads/2023/10/ghee-idli-scaled.jpg" class="card-img-top" alt="Original Pad Thai">
         <div class="card-body p-0">
-          <h6 class="card-title m-0">Ghee Karam Idly</h6>
-          <p class="mb-1">$16.95-<i class="bi bi-hand-thumbs-up"></i>91% (129)</p>
+          <h6 class="card-title m-1 text-center">Ghee Karam Idly</h6>
+          <!-- <p class="mb-1 text-center">$16.95-<i class="bi bi-hand-thumbs-up"></i>91% (129)</p> -->
           
         </div>
-        <div class="add-btn">+</div>
+        <!-- <div class="add-btn">+</div> -->
       </div>
     </div>
 
     <!-- Card 3 -->
  <div class="col-6 col-md-4 col-lg-2">
-      <div class="card food-card position-relative shadow-sm">
+      <div class="card food-card position-relative shadow-sm p-2">
         <span class="badge-custom">#3 Most Liked</span>
         <img src="https://miro.medium.com/1*nfbDiVFxBQGys61H7X7B1A.jpeg" class="card-img-top" alt="Egg Rolls">
         <div class="card-body p-0">
-          <h6 class="card-title m-0">Idly</h6>
-          <p class="mb-1">$8.45-<i class="bi bi-hand-thumbs-up"></i>97% (207)</p>
+          <h6 class="card-title m-1 text-center">Idly</h6>
+          <!-- <p class="mb-1 text-center">$8.45-<i class="bi bi-hand-thumbs-up"></i>97% (207)</p> -->
          
         </div>
-        <div class="add-btn">+</div>
+        <!-- <div class="add-btn">+</div> -->
       </div>
     </div>
 
     <!-- Card 4 -->
     <div class="col-6 col-md-4 col-lg-2">
-      <div class="card food-card position-relative shadow-sm">
+      <div class="card food-card position-relative shadow-sm p-2">
         <img src="https://apollosugar.com/wp-content/uploads/2018/12/Masala-Dosa-1024x683.jpg" class="card-img-top" alt="Pad Kee Mow">
         <div class="card-body p-0">
-          <h6 class="card-title m-0">Masala Dosa</h6>
-          <p class="mb-1">$15.95-<i class="bi bi-hand-thumbs-up"></i>97% (72)</p>
+          <h6 class="card-title m-1 text-center">Masala Dosa</h6>
+          <!-- <p class="mb-1 text-center">$15.95-<i class="bi bi-hand-thumbs-up"></i>97% (72)</p> -->
          
         </div>
-        <div class="add-btn">+</div>
+        <!-- <div class="add-btn">+</div> -->
       </div>
     </div>
 
     <!-- Card 5 -->
     <div class="col-6 col-md-4 col-lg-2">
-      <div class="card food-card position-relative shadow-sm">
+      <div class="card food-card position-relative shadow-sm p-2">
         <img src="https://indiafoodnetwork.in/wp-content/uploads/2018/06/mysore_bonda-Comp.jpg" class="card-img-top" alt="Mongolian Beef">
         <div class="card-body p-0">
-          <h6 class="card-title m-0">Mysore Bonda</h6>
-          <p class="mb-1">$19.45-<i class="bi bi-hand-thumbs-up"></i>100% (38)</p>
+          <h6 class="card-title m-1 text-center">Mysore Bonda</h6>
+          <!-- <p class="mb-1 text-center">$19.45-<i class="bi bi-hand-thumbs-up"></i>100% (38)</p> -->
          
         </div>
-        <div class="add-btn">+</div>
+        <!-- <div class="add-btn">+</div> -->
       </div>
     </div>
 
     <!-- Card 6 -->
     <div class="col-6 col-md-4 col-lg-2">
-      <div class="card food-card position-relative shadow-sm">
+      <div class="card food-card position-relative shadow-sm p-2">
         <img src="https://www.cookingwithsiddhi.com/wp-content/uploads/2020/07/poori-recipe.jpg" class="card-img-top" alt="Extra Dish">
         <div class="card-body p-0">
-          <h6 class="card-title m-0">Poori</h6>
-          <p class="mb-1">$12.95-<i class="bi bi-hand-thumbs-up"></i>95% (50)</p>
+          <h6 class="card-title m-1 text-center"> Poori</h6>
+          <!-- <p class="mb-1 text-center">$12.95-<i class="bi bi-hand-thumbs-up"></i>95% (50)</p> -->
           
         </div>
-        <div class="add-btn">+</div>
+        <!-- <div class="add-btn">+</div> -->
       </div>
     </div>
 
