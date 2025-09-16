@@ -16,6 +16,13 @@
       height: 100%;
 
     }
+
+    @media (max-width: 768px) {
+     .item{
+      padding: 10px;
+     }
+
+    }
     .item:hover{
       box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
   transition: transform 0.3s ease, box-shadow 0.3s ease;
@@ -89,6 +96,14 @@ display:none;
   padding: 40px;
   background: #fff;
 }
+@media (max-width: 768px) {
+  .card-area{
+    padding: 0px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+}
+  
 
 /* Card styling */
 .menu-cards {
@@ -125,15 +140,15 @@ display:none;
     </style>
     <style>
 
-      /* @media (max-width: 768px) {
+       @media (max-width: 768px) {
         .navbar-toggler {
-  border:5px solid white; 
+  border:3px solid rgb(15, 15, 15); 
 }
 
 .navbar-toggler-icon {
   background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='white' stroke-width='4' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
 }
-      } */
+      } 
        
         .navbar .container-fluid{
             /* background-image: url(./assets/header4.jpg); */
@@ -187,6 +202,15 @@ display:none;
             display: flex;
             
         }
+          @media (max-width: 768px) {
+  .contact  {
+    flex-direction: column;
+    text-align: center;
+    margin-right: auto;
+    
+ 
+  }
+}
         .contact a{
             text-decoration: none;
             font-weight: bold;
@@ -349,7 +373,7 @@ display:none;
   /* position: sticky; */
   position:sticky;
   top: 160px;
- z-index: 1050;
+
  background-color: #f8f7f6;
   /* left: 50%;
   transform: translateX(-50%);
@@ -362,16 +386,22 @@ display:none;
   <header style="position: fixed; top: 0%; width: 100%; z-index: 100;">
         <div class="contact row">
            <div class="col"><a href=""> Call Us : 972-970-6777</a></div> 
+           <div class="col text-center bg-white rounded p-1 m-1 "><span style="color:red"><i class="bi bi-clock"></i></span> <a href=""></a><b>Sunday: <span style="color:red">Closed</span> Mon-Sat :<span style="color:red"> 08AM-11AM </span> </b></div>
            <div class="col text-end"><a href=""> <i class="bi bi-geo-alt-fill"></i> 
-				7967 Custer Rd Ste 200,Frisco, TX 75035</a></div> 
+				7967 Custer Rd Ste 200 Frisco TX 75035</a></div> 
         </div>
 
         <nav class="navbar navbar-expand-lg bg-body-tertiary ">
   <div class="container-fluid">
     <img src="image.jpeg" alt="" class="me-5 logo" onclick="window.location.href='index.html'">
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+    <!-- <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
-    </button>
+    </button> -->
+        <button class="navbar-toggler p-1 py-0 m-1" type="button" data-bs-toggle="collapse"
+    data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup"
+    aria-expanded="false" aria-label="Toggle navigation">
+  <span class="navbar-toggler-icon"></span>
+</button>
     <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
       <div class="navbar-nav ms-5">
         <a class="nav-link " aria-current="page" href="index.html">HOME</a>
@@ -446,14 +476,14 @@ display:none;
         <div class="row g-4"> <!-- g-4 adds gap between columns -->
 
       <!-- Item 1 -->
-      <div class="col-md-6">
+      <div class="col-md-6 ">
         <div class="item d-flex justify-content-between align-items-center">
           <div>
             <div class="menu-title">Kaju Masala Dosa</div>
             <div class="menu-price">$9.99 · 99% (124)</div>
             <div class="menu-desc">Jasmine white rice, egg, scallion, white onion, tomato</div>
           </div>
-          <img  style="width:300px;"src="https://www.pringleapi.com/DigitalMenu/Products/423916.jpg" alt="House Fried Rice" class="menu-img">
+          <img src="https://www.pringleapi.com/DigitalMenu/Products/423916.jpg" alt="House Fried Rice" class="menu-img">
         </div>
       </div>
 

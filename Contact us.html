@@ -11,7 +11,7 @@
 
        @media (max-width: 768px) {
         .navbar-toggler {
-  border:5px solid white; /* Optional: makes border white too */
+  border:3px solid rgb(5, 5, 5); /* Optional: makes border white too */
 }
 
 .navbar-toggler-icon {
@@ -50,7 +50,7 @@
         }
         .navbar-nav a{
             color: #0d411d;
-            font-size: larger;
+            font-size: 15px;
             font-weight: bold;
             padding: 10px!important;
             margin-top: 25px;
@@ -71,6 +71,15 @@
             display: flex;
             
         }
+          @media (max-width: 768px) {
+  .contact  {
+    flex-direction: column;
+    text-align: center;
+    margin-right: auto;
+    
+ 
+  }
+}
         .contact a{
             text-decoration: none;
             font-weight: bold;
@@ -281,16 +290,22 @@
      <header style="position: fixed; top: 0%; width: 100%; z-index: 100;">
         <div class="contact row">
             <div class="col"><a href=""> Call Us : 972-970-6777</a></div> 
-           <div class="col text-end"><a href=""> <i class="bi bi-geo-alt-fill"></i> 
-				7967 Custer Rd Ste 200,Frisco, TX 75035</a></div> 
+             <div class="col text-center bg-white rounded p-1 m-2"><span style="color:red"><i class="bi bi-clock"></i></span> <a href=""></a><b>Sunday: <span style="color:red">Closed</span> Mon-Sat:<span style="color:red"> 08AM-11AM </span> </b></div>
+          <div class="col text-end"><a href=""> <i class="bi bi-geo-alt-fill"></i> 
+				7967 Custer Rd Ste 200 FriscoTX 75035</a></div> 
         </div>
 
         <nav class="navbar navbar-expand-lg bg-body-tertiary">
   <div class="container-fluid">
     <img src="image.jpeg" alt="" class="me-5 logo" onclick="window.location.href='index.html'">
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+    <!-- <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
-    </button>
+    </button> -->
+     <button class="navbar-toggler p-1 py-0 m-1 " type="button" data-bs-toggle="collapse"
+    data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup"
+    aria-expanded="false" aria-label="Toggle navigation">
+  <span class="navbar-toggler-icon"></span>
+</button>
     <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
       <div class="navbar-nav ms-5">
         <a class="nav-link " aria-current="page" href="index.html">HOME</a>

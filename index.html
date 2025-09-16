@@ -180,7 +180,7 @@
 
       @media (max-width: 768px) {
         .navbar-toggler {
-  border:5px solid white; /* Optional: makes border white too */
+  border:3px solid rgb(20, 20, 20); /* Optional: makes border white too */
 }
 
 .navbar-toggler-icon {
@@ -244,6 +244,9 @@
   .contact  {
     flex-direction: column;
     text-align: center;
+    margin-right: auto;
+    
+ 
   }
 }
         .contact a{
@@ -371,12 +374,13 @@
 
      
 </head>
+
 <body>
 
     <header style="position: fixed; top: 0%; width: 100%; z-index: 100;">
         <div class="contact row">
            <div class="col "><a href=""> Call Us : 972-970-6777</a></div> 
-           <div class="col text-center bg-white rounded "><i class="bi bi-clock"></i> <a href=""></a><b>Mon: <span style="color:red">Closed</span> Tue-Fri:<span style="color:red"> 04 PM - 09 PM </span>Thu: <span style="color:red">08 AM - 11 AM</span> Sat-Sun:<span style="color:red"> 12 PM - 09 PM</span></b></div>
+           <div class="col text-center bg-white rounded p-1 "><span style="color:red"><i class="bi bi-clock"></i></span> <a href=""></a><b>Sunday: <span style="color:red">Closed</span> Mon-Sat:<span style="color:red"> 08AM-11AM </span> </b></div>
            <div class="col text-end"><a href=""> <i class="bi bi-geo-alt-fill"></i> 
 				7967 Custer Rd Ste 200,Frisco, TX 75035</a></div> 
         </div>
@@ -384,9 +388,15 @@
         <nav class="navbar navbar-expand-lg bg-body-tertiary ">
   <div class="container-fluid">
     <img src="image.jpeg" alt="" class="me-5 logo" onclick="window.location.href='index.html'">
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+    <!-- <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" 
+    aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
-    </button>
+    </button> -->
+    <button class="navbar-toggler p-1 py-0 m-1" type="button" data-bs-toggle="collapse"
+    data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup"
+    aria-expanded="false" aria-label="Toggle navigation">
+  <span class="navbar-toggler-icon"></span>
+</button>
     <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
       <div class="navbar-nav ms-5">
         <a class="nav-link active" aria-current="page" href="index.html">HOME</a>
@@ -414,10 +424,10 @@
   </div>
   <div class="carousel-inner">
     <div class="carousel-item active banner">
-      <img src="https://theharamaynguide.com/cdn/shop/articles/tiffin-home-food-services-in-haramayn-sdsda0e2-479f-a131-719a491db67f_c9de8d69-1e76-4e29-afa4-6f5edc29cd3f.webp?v=1739259805&width=2048" class="d-block w-100 " alt="...">
+      <img src="https://thumbs.dreamstime.com/b/festivals-like-onam-vishu-pongal-diwali-kerala-tamil-nadu-serve-vegetarian-food-rice-sambar-rasam-dal-curry-ghee-332907670.jpg" class="d-block w-100 " alt="...">
     </div>
     <div class="carousel-item banner">
-      <img src="https://i0.wp.com/igoforlocal.com/wp-content/uploads/2023/09/banner1new.jpeg?resize=1020%2C380&ssl=1" class="d-block w-100 " alt="...">
+      <img src="https://img.freepik.com/free-photo/delicious-food-table_23-2150857814.jpg?semt=ais_hybrid&w=740" class="d-block w-100 " alt="...">
     </div>
     <div class="carousel-item banner">
       <img src="https://static.vecteezy.com/system/resources/thumbnails/035/053/516/small_2x/ai-generated-background-veggie-vegan-food-zucchini-ai-generated-photo.jpg" class="d-block w-100 " alt="...">
